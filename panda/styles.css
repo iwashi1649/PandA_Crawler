@@ -1,0 +1,61 @@
+@media screen and (min-width:801px) {
+    body{
+        width:900px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:800px) {
+    body{
+        width:100%;
+        margin: auto;
+    }
+}
+.site
+{
+    display: inline-block;
+    width:45%;
+    margin: 5 5 5 5;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: antiquewhite;
+
+    text-align: center;
+    vertical-align: center;
+}
+.site:hover
+{
+    background-color: rgb(248, 223, 190);
+}
+.next
+{
+    margin:auto;
+    margin-bottom: 50px;
+    width:66%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: antiquewhite;
+    text-align: center;
+    vertical-align: center;
+}
+.next h3{
+    font-size: 2em;
+}
+.next:hover
+{
+    background-color: rgb(248, 223, 190);
+}
+h2
+{
+    background-color: rgb(80, 31, 31);
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.site h3{
+    font-size: 1.5em;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
