@@ -1,5 +1,5 @@
 <?php
-$here = dirname(__FILE__);
+$here = dirname(__FILE__).'/';
 $json = file_get_contents($here."./settings.json");
 $settings = json_decode($json, true);
 $cookie = "";
@@ -11,7 +11,7 @@ function Login($username, $password) //ログインしてcookieを取得する
     global $cookie;
     global $settings;
     global $here;
-    $cookie = $here."{$settings['cookiePath']}{$username}.cookie";
+    $cookie = "{$settings['cookiePath']}{$username}.cookie";
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);

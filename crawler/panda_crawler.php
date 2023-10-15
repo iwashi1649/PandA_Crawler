@@ -1,5 +1,5 @@
 <?php
-$here = dirname(__FILE__);
+$here = dirname(__FILE__).'/';
 require($here."./panda.php");
 //settingsの読み込み
 $json = file_get_contents($here."./settings.json");
